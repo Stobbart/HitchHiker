@@ -77,7 +77,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="g8F-2F-fGE"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nug-WE-Hub">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nug-WE-Hub" customClass="RoundedShadowButton" customModule="HTCHHKR" customModuleProvider="target">
                                 <rect key="frame" x="34" y="594" width="306" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,13 +85,16 @@
                                 <state key="normal" title="REQUEST RIDE">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1J-sw-fxM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikD-KX-Z3d">
                                 <rect key="frame" x="287" y="533" width="53" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="centerMapBtn"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-92-dd9">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-92-dd9" customClass="RoundedShadowView" customModule="HTCHHKR" customModuleProvider="target">
                                 <rect key="frame" x="29" y="78" width="316" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -102,7 +105,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Oc-XE-6AR">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="22"/>
                                                 <subviews>
-                                                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8or-XS-DjY">
+                                                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8or-XS-DjY" customClass="CircleView" customModule="HTCHHKR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="3.5" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.18509203769999999" green="0.79235578399999995" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -128,13 +131,18 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Gs-ld3">
                                                 <rect key="frame" x="0.0" y="35" width="290" height="20"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRw-St-zqZ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRw-St-zqZ" customClass="CircleView" customModule="HTCHHKR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="2.5" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.18509203769999999" green="0.79235578399999995" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="U03-4M-hsI"/>
                                                             <constraint firstAttribute="width" constant="15" id="rdf-QQ-FfV"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="isj-Lb-j4x">
                                                         <rect key="frame" x="25" y="0.0" width="265" height="20"/>
@@ -178,7 +186,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-2B-WFS" customClass="RoundedImageView" customModule="HTCHHKR" customModuleProvider="target">
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-2B-WFS" customClass="RoundedImageView" customModule="HTCHHKR" customModuleProvider="target">
                                         <rect key="frame" x="260" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="UmE-MU-4D0"/>
@@ -192,6 +200,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="nug-WE-Hub" id="VUO-Kg-kYI"/>
                         <outlet property="mapView" destination="M3N-pn-87S" id="QHT-bk-Iqh"/>
                     </connections>
                 </viewController>
@@ -203,5 +212,6 @@
     <resources>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="sample-photo" width="320" height="320"/>
     </resources>
 </document>

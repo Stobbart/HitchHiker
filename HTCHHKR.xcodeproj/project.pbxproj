@@ -18,6 +18,9 @@
 		A2A1492021974F2400B35D0E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A1491F21974F2400B35D0E /* LoginVC.swift */; };
 		A2A149252199722700B35D0E /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A149242199722700B35D0E /* GradientLayer.swift */; };
 		A2A14927219978F300B35D0E /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A14926219978F300B35D0E /* RoundedImageView.swift */; };
+		A2A1492921997C2000B35D0E /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A1492821997C2000B35D0E /* RoundedShadowView.swift */; };
+		A2A1492B21997D4C00B35D0E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A1492A21997D4C00B35D0E /* CircleView.swift */; };
+		A2A1492D21997F8800B35D0E /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A1492C21997F8800B35D0E /* RoundedShadowButton.swift */; };
 		B9C10C641C332ED3020974E8 /* Pods_HTCHHKRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB09A9B6C79F4C2096E6D4 /* Pods_HTCHHKRTests.framework */; };
 		BFD92EB04EC8953DAA5A5B61 /* Pods_HTCHHKR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13556965DF4BFE0239C02909 /* Pods_HTCHHKR.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,9 @@
 		A2A1491F21974F2400B35D0E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A2A149242199722700B35D0E /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		A2A14926219978F300B35D0E /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		A2A1492821997C2000B35D0E /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		A2A1492A21997D4C00B35D0E /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		A2A1492C21997F8800B35D0E /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		CADB09A9B6C79F4C2096E6D4 /* Pods_HTCHHKRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTCHHKRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0879FE8AD09FEFBCB683FB /* Pods-HTCHHKR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCHHKR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTCHHKR/Pods-HTCHHKR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +111,7 @@
 				A2A1491E21973D9E00B35D0E /* Services */,
 				A28D913D218E205100C3E0A0 /* AppDelegate.swift */,
 				A28D9141218E205100C3E0A0 /* Main.storyboard */,
+				A2A1492A21997D4C00B35D0E /* CircleView.swift */,
 				A28D9144218E205200C3E0A0 /* Assets.xcassets */,
 				A28D9146218E205200C3E0A0 /* LaunchScreen.storyboard */,
 				A28D9149218E205200C3E0A0 /* Info.plist */,
@@ -144,6 +151,8 @@
 			children = (
 				A2A149242199722700B35D0E /* GradientLayer.swift */,
 				A2A14926219978F300B35D0E /* RoundedImageView.swift */,
+				A2A1492821997C2000B35D0E /* RoundedShadowView.swift */,
+				A2A1492C21997F8800B35D0E /* RoundedShadowButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,12 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A1492B21997D4C00B35D0E /* CircleView.swift in Sources */,
 				A2A1491D21973D9900B35D0E /* DataService.swift in Sources */,
 				A2A149252199722700B35D0E /* GradientLayer.swift in Sources */,
 				A2A14927219978F300B35D0E /* RoundedImageView.swift in Sources */,
 				A28D9140218E205100C3E0A0 /* ViewController.swift in Sources */,
+				A2A1492D21997F8800B35D0E /* RoundedShadowButton.swift in Sources */,
 				A2A1492021974F2400B35D0E /* LoginVC.swift in Sources */,
 				A28D913E218E205100C3E0A0 /* AppDelegate.swift in Sources */,
+				A2A1492921997C2000B35D0E /* RoundedShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

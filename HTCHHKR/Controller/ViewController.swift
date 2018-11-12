@@ -10,7 +10,9 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController, MKMapViewDelegate {
-
+    
+    @IBOutlet weak var actionButton: RoundedShadowButton!
+    
     @IBOutlet weak var mapView: MKMapView!
     
     
@@ -19,6 +21,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func actionButtonWasPressed(_ sender: Any) {
+        actionButton.animateButton(shouldLoad: true, withMessage: nil)
+        
+    }
+    
 }
 
