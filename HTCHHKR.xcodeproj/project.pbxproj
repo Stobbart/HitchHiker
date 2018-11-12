@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A20C1F93219391EA0082498A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20C1F92219391EA0082498A /* GoogleService-Info.plist */; };
+		A26944192199B74400CCF53C /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26944182199B74400CCF53C /* RoundedCornerTextField.swift */; };
+		A269441B2199BACE00CCF53C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269441A2199BACE00CCF53C /* UIViewExtension.swift */; };
 		A28D913E218E205100C3E0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28D913D218E205100C3E0A0 /* AppDelegate.swift */; };
 		A28D9140218E205100C3E0A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28D913F218E205100C3E0A0 /* ViewController.swift */; };
 		A28D9143218E205100C3E0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28D9141218E205100C3E0A0 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		21CCE624439AC5E4BA60C168 /* Pods-HTCHHKR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCHHKR.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTCHHKR/Pods-HTCHHKR.release.xcconfig"; sourceTree = "<group>"; };
 		33A7DF7F989F09636CBD0D1B /* Pods-HTCHHKRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCHHKRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTCHHKRTests/Pods-HTCHHKRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20C1F92219391EA0082498A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A26944182199B74400CCF53C /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		A269441A2199BACE00CCF53C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A28D913A218E205100C3E0A0 /* HTCHHKR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTCHHKR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28D913D218E205100C3E0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A28D913F218E205100C3E0A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +120,7 @@
 				A28D9146218E205200C3E0A0 /* LaunchScreen.storyboard */,
 				A28D9149218E205200C3E0A0 /* Info.plist */,
 				A20C1F92219391EA0082498A /* GoogleService-Info.plist */,
-				A2A1491F21974F2400B35D0E /* LoginVC.swift */,
+				A269441A2199BACE00CCF53C /* UIViewExtension.swift */,
 			);
 			path = HTCHHKR;
 			sourceTree = "<group>";
@@ -141,6 +145,7 @@
 		A2A14921219971FD00B35D0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A2A1491F21974F2400B35D0E /* LoginVC.swift */,
 				A28D913F218E205100C3E0A0 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -153,6 +158,7 @@
 				A2A14926219978F300B35D0E /* RoundedImageView.swift */,
 				A2A1492821997C2000B35D0E /* RoundedShadowView.swift */,
 				A2A1492C21997F8800B35D0E /* RoundedShadowButton.swift */,
+				A26944182199B74400CCF53C /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,12 +383,14 @@
 			files = (
 				A2A1492B21997D4C00B35D0E /* CircleView.swift in Sources */,
 				A2A1491D21973D9900B35D0E /* DataService.swift in Sources */,
+				A269441B2199BACE00CCF53C /* UIViewExtension.swift in Sources */,
 				A2A149252199722700B35D0E /* GradientLayer.swift in Sources */,
 				A2A14927219978F300B35D0E /* RoundedImageView.swift in Sources */,
 				A28D9140218E205100C3E0A0 /* ViewController.swift in Sources */,
 				A2A1492D21997F8800B35D0E /* RoundedShadowButton.swift in Sources */,
 				A2A1492021974F2400B35D0E /* LoginVC.swift in Sources */,
 				A28D913E218E205100C3E0A0 /* AppDelegate.swift in Sources */,
+				A26944192199B74400CCF53C /* RoundedCornerTextField.swift in Sources */,
 				A2A1492921997C2000B35D0E /* RoundedShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolaudie.HTCHHKR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -575,7 +583,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolaudie.HTCHHKR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

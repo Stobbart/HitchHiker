@@ -21,9 +21,13 @@ class LoginVC: UIViewController{
         super.viewDidLoad()
         emailField.delegate = self
         passwordField.delegate = self
-        
+        view.bindToKeyboard()
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
         self.view.addGestureRecognizer(tap)
+    }
+    
+    @IBAction func cancelBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func authBtnWasPressed(_ sender: Any) {
@@ -49,11 +53,7 @@ class LoginVC: UIViewController{
             }
         }
     }
-    
-    @IBAction func cancelBtnWasPressed(_ sender: Any){
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     @objc func handleScreenTap(sender: UITapGestureRecognizer){
         self.view.endEditing(true)
     }
