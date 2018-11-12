@@ -1,0 +1,6 @@
+framework module Pods_HTCHHKR {
+  umbrella header "Pods-HTCHHKR-umbrella.h"
+
+  export *
+  module * { export * }
+}
